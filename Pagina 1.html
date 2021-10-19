@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>Ejercicio 3.2</title>
+        <style>
+            body{
+                background-color: #250731;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23f8933a' fill-opacity='0.4' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+            }
+            header{
+                background-color:orange;
+                background-size: 50px;
+                background-position: center;
+                height: 50px;
+                padding: 10px;
+                text-align: center;
+                border: solid black;
+            }
+            header a{
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin-top: 80px;
+                text-shadow: 2px 2px #000;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            nav ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            nav li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+            h1{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            p.text{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                text-align: center;
+            }
+
+            div{
+                position: center;
+            }
+            div.h1{
+                background-color: lavender;
+                width: auto;
+                height: auto;
+                border: solid 3px black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Index.html"><h3>Inicio</h3></a></li>
+                    <li><a href="Pagina 1.html"><h3>Pagina 1</h3></a></li>
+                    <li><a href="Pagina 2.html"><h3>Pagina 2</h3></a></li>
+                    <li><a href="Pagina 3.html"><h3>Pagina 3</h3></a></li>
+                </ul>
+            </nav>
+            <br>
+            <div class="h1">
+                <h1 style="color: black";>Fechas Conmemorativas</h1>
+            </div>
+        </header>
+        <br><br><br><br>
+        <p class="text" ><b>En el mes de octubre hay una variedad de fechas conmemorativas para celebrar, por ejemplo el dia de la raza, entre otras mas.</b></p>
+        <main class="container">
+            <div class="row">
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                          Octubre 4 - Dia Mundial de los Animales
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                                <div class="spinner-border text-info" role="status">
+                                   <span class="visually-hidden">Loading...</span>
+                                </div>
+                            <p>El 4 de octubre se celebra el Día Mundial de los Animales en conmemoración de San Francisco de Asís. Este santo, que nació en 1182 en Italia, dejó como enseñanza a la humanidad que debemos comprender cuál es nuestro lugar en la Tierra, ya que el bienestar de nosotros está integrado al bienestar de todo los animales y el medio ambiente.</p> 
+                          <img src="Imagenes/DiaDeAnimales.jpg">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Octubre 10 - Día de la Salud Mental
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                                <div class="spinner-border text-danger" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                          <p>El Día Mundial de la Salud Mental (DMH), que se celebra cada 10 de octubre, es promovido por la Federación Mundial de la Salud Mental y cuenta con el respaldo de la Organización Mundial de la Salud (OMS). El evento representa un compromiso global para crear conciencia sobre los problemas de salud mental en todo el mundo y movilizar esfuerzos en apoyo de la salud mental.</p>
+                          <br>
+                          <img src="Imagenes/SaludMental.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Octubre 12 - Día de la Raza
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            <p>El Día de la Raza es una de varias denominaciones que se le da al 12 de octubre, día en que se conmemora la navegación y exploración del continente americano por Cristóbal Colón y su tripulación en 1492.</p>
+                          <img src="Imagenes/DiaDeRaza.jpg">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            Octubre 16 -  Día de la Alimentación
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                          <div class="accordion-body">
+                                <div class="spinner-border text-success" role="status" > 
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <p>Cada 16 de octubre desde el año 1979 se conmemora el Día Mundial de la Alimentación, una celebración promovida por la Organización de las Naciones Unidas para la Agricultura y la Alimentación (FAO), con el claro objetivo de disminuir el hambre en el mundo, propósito que también busca la Agenda 2030 con su meta de hambre cero.</p>
+                                <img src="Imagenes/Alimentacion.jpg">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                            Octubre 31 - Dia Halloween
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                          <div class="accordion-body">
+                                <div class="spinner-border text-dark" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            <p>Halloween es una celebración internacional que tiene lugar el 31 de octubre, víspera de la fiesta cristiana occidental del Día de Todos los Santos. Aparece especialmente vinculado al primer tramo de Allhallowtide,6​ el tiempo del año litúrgico dedicado a recordar a los muertos, incluidos los santos (a través de sus reliquias), mártires y todos los fieles difuntos.</p>
+                            <img src="Imagenes/Halloween.jpg">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </main>
+    </body>
+</html>

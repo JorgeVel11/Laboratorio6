@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>Ejercicio 3.2</title>
+        <style>
+            body{
+                background-color: #1a0b30;
+                background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M82.42 180h-1.415L0 98.995v-2.827L6.167 90 0 83.833V81.004L81.005 0h2.827L90 6.167 96.167 0H98.996L180 81.005v2.827L173.833 90 180 96.167V98.996L98.995 180h-2.827L90 173.833 83.833 180H82.42zm0-1.414L1.413 97.58 8.994 90l-7.58-7.58L82.42 1.413 90 8.994l7.58-7.58 81.006 81.005-7.58 7.58 7.58 7.58-81.005 81.006-7.58-7.58-7.58 7.58zM175.196 0h-25.832c1.033 2.924 2.616 5.59 4.625 7.868C152.145 9.682 151 12.208 151 15c0 5.523 4.477 10 10 10 1.657 0 3 1.343 3 3v4h16V0h-4.803c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6s-6-2.686-6-6c0-1.093.292-2.117.803-3h10.394-13.685C161.18.938 161 1.948 161 3v4c-4.418 0-8 3.582-8 8s3.582 8 8 8c2.76 0 5 2.24 5 5v2h4v-4h2v4h4v-4h2v4h2V0h-4.803zm-15.783 0c-.27.954-.414 1.96-.414 3v2.2c-1.25.254-2.414.74-3.447 1.412-1.716-1.93-3.098-4.164-4.054-6.612h7.914zM180 17h-3l2.143-10H180v10zm-30.635 163c-.884-2.502-1.365-5.195-1.365-8 0-13.255 10.748-24 23.99-24H180v32h-30.635zm12.147 0c.5-1.416 1.345-2.67 2.434-3.66l-1.345-1.48c-1.498 1.364-2.62 3.136-3.186 5.14H151.5c-.97-2.48-1.5-5.177-1.5-8 0-12.15 9.84-22 22-22h8v30h-18.488zm13.685 0c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 148h8.01C21.26 148 32 158.742 32 172c0 2.805-.48 5.498-1.366 8H0v-32zm0 2h8c12.15 0 22 9.847 22 22 0 2.822-.53 5.52-1.5 8h-7.914c-.567-2.004-1.688-3.776-3.187-5.14l-1.346 1.48c1.09.99 1.933 2.244 2.434 3.66H0v-30zm15.197 30c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 32h16v-4c0-1.657 1.343-3 3-3 5.523 0 10-4.477 10-10 0-2.794-1.145-5.32-2.992-7.134C28.018 5.586 29.6 2.924 30.634 0H0v32zm0-2h2v-4h2v4h4v-4h2v4h4v-2c0-2.76 2.24-5 5-5 4.418 0 8-3.582 8-8s-3.582-8-8-8V3c0-1.052-.18-2.062-.512-3H0v30zM28.5 0c-.954 2.448-2.335 4.683-4.05 6.613-1.035-.672-2.2-1.16-3.45-1.413V3c0-1.04-.144-2.046-.414-3H28.5zM0 17h3L.857 7H0v10zM15.197 0c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6S4 6.314 4 3c0-1.093.292-2.117.803-3h10.394zM109 115c-1.657 0-3 1.343-3 3v4H74v-4c0-1.657-1.343-3-3-3-5.523 0-10-4.477-10-10 0-2.793 1.145-5.318 2.99-7.132C60.262 93.638 58 88.084 58 82c0-13.255 10.748-24 23.99-24h16.02C111.26 58 122 68.742 122 82c0 6.082-2.263 11.636-5.992 15.866C117.855 99.68 119 102.206 119 105c0 5.523-4.477 10-10 10zm0-2c-2.76 0-5 2.24-5 5v2h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-2c0-2.76-2.24-5-5-5-4.418 0-8-3.582-8-8s3.582-8 8-8v-4c0-2.64 1.136-5.013 2.946-6.66L72.6 84.86C70.39 86.874 69 89.775 69 93v2.2c-1.25.254-2.414.74-3.447 1.412C62.098 92.727 60 87.61 60 82c0-12.15 9.84-22 22-22h16c12.15 0 22 9.847 22 22 0 5.61-2.097 10.728-5.55 14.613-1.035-.672-2.2-1.16-3.45-1.413V93c0-3.226-1.39-6.127-3.6-8.14l-1.346 1.48C107.864 87.987 109 90.36 109 93v4c4.418 0 8 3.582 8 8s-3.582 8-8 8zM90.857 97L93 107h-6l2.143-10h1.714zM80 99c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm20 0c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6z' fill='%23ff6e03' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+            }
+            header{
+                background-color:orange;
+                background-size: 50px;
+                background-position: center;
+                height: 50px;
+                padding: 10px;
+                text-align: center;
+                border: solid black;
+            }
+            header a{
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin-top: 80px;
+                text-shadow: 2px 2px #000;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            nav ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            nav li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+            h1{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            p.text{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                text-align: center;
+            }
+            h3.historias{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            div.h1{
+                background-color: lavender;
+                width: auto;
+                height: auto;
+                border: solid 3px black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Index.html"><h3>Inicio</h3></a></li>
+                    <li><a href="Pagina 1.html"><h3>Pagina 1</h3></a></li>
+                    <li><a href="Pagina 2.html"><h3>Pagina 2</h3></a></li>
+                    <li><a href="Pagina 3.html"><h3>Pagina 3</h3></a></li>
+                </ul>
+            </nav>
+            </nav>
+            <br>
+            <div class="h1">
+                <h1 style="color: black";>Leyendas Urbanas de Halloween</h1>
+            </div>
+        </header>
+        <br><br><br><br>
+        <div class="container">
+            <p class="text"><b>El mes de octubre se representa por ser el mes donde mas cosas paranormales pueden suceder, ademas de que podemos encontrar historias de miedo en cualquier lugar, por lo que no podria faltar en una pagina enfocada en este mes, un apartado donde se encuentren diferentes historias tenebrosas.  </b></p>
+            <div class="row">
+                <div class="col-6 col-lg-6 p-2">
+                    <article class="card bg-light text-light h-100">
+                        <div class="card h-100 bg-dark">
+
+                            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="Imagenes/Curva.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="imagenes/Curva2.gif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                            <div class="card-body">
+                                <h3 class="historias" class="card-title text-center">La niña de la Curva</h3>
+                                <p class="card-text bg-dark">La leyenda de la niña de la curva es, sin duda, la más célebre de todas las historias de terror. No hay Halloween en que no se escuche esta misteriosa historia, y puede que haya sembrado el pánico en más de un Blablacar. Como muchas historias populares, se desconoce su autor y la localización del suceso. Se cuenta en decenas de países. En Suecia donde se la conoce como Vita frun; en Italia, donde la llaman la Dama Bianca; en República Checa, que la bautizó Bílá paní...En España, el suceso paranormal protagonizado por esta joven se ha ubicado históricamente en varios puntos geográficos: de la localidad sevillana de Sanlúcar la Mayor al municipio ibicenco de San Antonio. Una noche de espesa niebla, un joven iba conduciendo por una carretera desconocida. Las luces del coche alumbraban lo poco que la niebla dejaba ver a su paso pero, de repente, una joven vestida de un blanco impoluto apareció a un lado de la calzada. Aunque la chica permanecía inmóvil, el conductor interpretó que estaba haciendo autostop y decidió parar para invitarla a subir.La misteriosa joven accedió a subir al asiento de atrás del automóvil, aunque sin mediar palabra. Durante el recorrido, el conductor intentó entablar conversación sin éxito hasta que, de pronto, la joven dijo: "Cuidado con la curva. Ahí morí yo". El joven, creyendo que era una broma, se giró hacia la chica y descubrió con estupor que ya no había nadie en el asiento. Cuando giró la cabeza hacia la carretera aterrorizado, ahí estaba. La curva.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-6 col-lg-6 p-2">
+                    <article class="card bg-light text-light h-100">
+                        <div class="card h-100 bg-dark">
+
+                            <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="Imagenes/Veronica.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="imagenes/Veronica2.gif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                            <div class="card-body">
+                                <h3 class="historias" class="card-title text-center">Verónica ante el espejo</h3>
+                                <p class="card-text bg-dark">La leyenda de Verónica es una de las más populares entre quienes disfrutan de ese escalofrío de terror en la espalda. De nuevo, su origen y autoría permanecen desconocidos. La historia cuenta que una niña llamada Verónica participó en una sesión de Ouija sin tomarse en serio la invocación, y fue asesinada en extrañas circunstancias delante de todos los participantes.Según una de las versiones, ya que la historia varía según el lugar en el que se escuche, una silla salió volando por la habitación y golpeó a la joven por la espalda, ocasionándole la muerte. Otra versión apunta que fueron unas tijeras las que salieron volando y provocaron la muerte de la joven por apuñalamiento. Lo que es común a todas es el ritual que conlleva esta historia. Según la profecía, si pronuncias el nombre de Verónica tres o nueve veces (según la versión), con un libro -que suele ser la Biblia- y unas tijeras abiertas, se aparece el fantasma de la joven detrás de tu reflejo y te mata.Otra de las versiones más extendidas entre los amantes del más allá es que el espejo se empaña y aparece la fecha de tu muerte, que en muchas ocasiones, es ese mismo día. También, se dice que al pronunciar Verónica frente al espejo cierto número de veces, las puertas y ventanas de la habitación se cierran y la figura de una joven te acaba asesinando. Como se dice comúnmente: La curiosidad, mató al gato.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
